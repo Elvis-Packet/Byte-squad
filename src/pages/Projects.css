@@ -1,0 +1,33 @@
+/* src/pages/Projects.css */
+.projects {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .project-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+  
+  .project-card {
+    background: rgba(255,255,255,0.1);
+    padding: 1rem;
+    border-radius: 10px;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  }
+  
+  .project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  

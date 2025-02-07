@@ -1,0 +1,23 @@
+/* src/index.css */
+
+/* Base themes */
+body.light {
+  background: #ffffff;
+  color: #000000;
+}
+
+body.dark {
+  background: #121212;
+  color: #ffffff;
+}
+
+/* Utility classes */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.app {
+  min-height: 100vh;
+  transition: background 0.3s ease, color 0.3s ease;
+}
