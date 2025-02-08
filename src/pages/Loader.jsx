@@ -8,7 +8,7 @@ const textVariants = {
   animate: { 
     opacity: 1, 
     y: 0,
-    transition: { duration: 1 }
+    transition: { duration: 5}
   },
 };
 
@@ -16,7 +16,7 @@ function Loader({ setLoading }) {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 3000);
+    }, 50);
     return () => clearTimeout(timer);
   }, [setLoading]);
 
