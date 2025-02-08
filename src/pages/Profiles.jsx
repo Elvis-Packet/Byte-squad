@@ -31,7 +31,7 @@ const teamMembers = [
     role: 'Fullstack Developer',
     languages: ['JavaScript', 'Python', 'React', 'Django'],
     socials: { 
-      instagram: 'https://instagram.com/charlie', 
+      x: 'https://instagram.com/charlie]', 
       github: 'https://github.com/kagoz-lab' 
     }
   },

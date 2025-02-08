@@ -1,29 +1,6 @@
-import { useState } from 'react';
 import './Contact.css';
 
 function Contact() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: '',
-  });
-
-  // Update form data as the user types
-  const handleChange = (e) => {
-    setFormData({ 
-      ...formData, 
-      [e.target.name]: e.target.value 
-    });
-  };
-
-  // Handle form submission (currently logs data to the console)
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Form Data Submitted:", formData);
-    // Clear the form (optional)
-    setFormData({ name: '', email: '', message: '' });
-  };
-
   return (
     <div className="contact">
       <h1>Contact Us</h1>
@@ -38,29 +15,26 @@ function Contact() {
         </div>
       </div>
       
-      {/* Contact Form */}
-      <form className="contact-form" onSubmit={handleSubmit}>
+      <form 
+        className="contact-form" 
+        action="https://formspree.io/f/xanqbdwv"  // Replace with your Formspree endpoint
+        method="POST"
+      >
         <input
           type="text"
           name="name"
           placeholder="Your Name"
-          value={formData.name}
-          onChange={handleChange}
           required
         />
         <input
           type="email"
           name="email"
           placeholder="Your Email"
-          value={formData.email}
-          onChange={handleChange}
           required
         />
         <textarea
           name="message"
           placeholder="Your Message"
-          value={formData.message}
-          onChange={handleChange}
           required
         />
         <button type="submit">Send Message</button>
