@@ -1,41 +1,53 @@
 .profiles {
-    padding: 2rem;
-    text-align: center;
-  }
-  
-  .profile-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: center;
-  }
-  
-  .profile-card {
-    background: rgba(2, 255, 234, 0.1);
-    padding: 1rem;
-    border-radius: 10px;
-    width: 200px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
-  }
-  
-  .profile-card:hover {
-    transform: translateY(-10px) scale(1.05);
-    box-shadow: 0 10px 20px rgba(4, 248, 248, 0.904);
-  }
-  
-  .profile-image {
-    width: 100%;
-    height: auto;
-    border-radius: 50%;
-  }
-  
-  .socials {
-    margin-top: 0.5rem;
-  }
-  
-  .social-icon {
-    margin-right: 10px;
-    display: inline-block;
-  }
-  
+  padding: 2rem;
+  text-align: center;
+}
+
+.profile-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.profile-card {
+  background: rgba(2, 255, 234, 0.1);
+  padding: 1rem;
+  border-radius: 10px;
+  width: 200px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.profile-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(4, 248, 248, 0.904);
+}
+
+.profile-image {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.socials {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.1);
+  transition: background 0.3s;
+}
+
+.social-icon:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
