@@ -11,9 +11,9 @@ const teamMembers = [
     socials: { 
       instagram: 'https://www.instagram.com/angel.a_gathoni/', 
       github: 'https://github.com/Angela-G9',
-      linkedin: 'https://www.linkedin.com/in/angela-gathoni/',
+      linkedin: 'https://www.linkedin.com/in/angela-gathoni-62974a332/',
       twitter: 'https://twitter.com/AngelaG9',
-      email: 'mailto:angela@example.com'
+      email: 'angelagathoni9568@gmail.com',
     }
   },
   {
